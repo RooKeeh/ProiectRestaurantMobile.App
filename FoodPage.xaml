@@ -2,10 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProiectRestaurantMobile.FoodPage"
-             Title="Food Items">
+             Title="Restaurants">
     <ContentPage.Content>
         <StackLayout Margin="20">
-            <Editor Placeholder="Enter food item name" Margin="20"
+            <Editor Placeholder="Enter Restaurant Name" Margin="20"
  Text="{Binding Description}"
  HeightRequest="50" />
             <Grid>
@@ -18,10 +18,10 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Button Text="Save Food Item" MaximumWidthRequest="200"
+                <Button Text="Save Restaurant Name" MaximumWidthRequest="200"
  Clicked="OnSaveButtonClicked" />
                 <Button Grid.Column="1"
- Text="Delete Food Item" MaximumWidthRequest="200"
+ Text="Delete Restaurant Name" MaximumWidthRequest="200"
  Clicked="OnDeleteButtonClicked"/>
                 <ListView Grid.Row="1" Grid.Column="0" x:Name="listView"
  Margin="20" IsRefreshing="True" >

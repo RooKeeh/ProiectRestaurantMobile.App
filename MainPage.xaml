@@ -11,28 +11,14 @@
 
             <Image
                 Source="restaurant.png"
-                SemanticProperties.Description="ABC"
+                SemanticProperties.Description="Restaurant"
                 HeightRequest="200"
                 HorizontalOptions="Center" />
 
             <Label
-                Text="DEF"
+                Text="Restaurant"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="GHI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="JKL"
-                FontSize="18"
-                HorizontalOptions="Center" />
-
-            <Button
-                x:Name="CounterBtn"
-                Text="MNO"
-                SemanticProperties.Hint="PQR"
-                Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>

@@ -3,9 +3,9 @@
              xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProiectRestaurantMobile.ListPage"
-             Title="Food List Page">
+             Title="Restaurant List Page">
     <StackLayout Margin="20">
-        <Editor Placeholder="Enter the description of the Food list" Text="{Binding Description}" HeightRequest="50" >
+        <Editor Placeholder="Enter the description of the Restaurant" Text="{Binding Description}" HeightRequest="50" >
             <Editor.Behaviors>
                 <local:ValidationBehaviour />
             </Editor.Behaviors>
@@ -24,7 +24,7 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button Text="Add/Choose Food Item to buy" MaximumWidthRequest="300"
+        <Button Text="Add/Choose Restaurant Name" MaximumWidthRequest="300"
 Clicked="OnChooseButtonClicked"/>
         <Button Text="Delete" Clicked="OnDeleteButtonClicked"/>
     </StackLayout>

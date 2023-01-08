@@ -4,7 +4,7 @@
              x:Class="ProiectRestaurantMobile.ListEntryPage"
              Title="Restaurant List">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add Restaurant List" Clicked="OnRestaurantListAddedClicked" />
+        <ToolbarItem Text="Add Restaurant" Clicked="OnRestaurantListAddedClicked" />
     </ContentPage.ToolbarItems>
     <ListView x:Name="listView" Margin="20" ItemSelected="OnListViewItemSelected">
         <ListView.ItemTemplate>

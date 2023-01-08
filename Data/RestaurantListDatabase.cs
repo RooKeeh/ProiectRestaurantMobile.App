@@ -68,20 +68,20 @@ namespace ProiectRestaurantMobile.Data
             .Where(i => i.ID == id)
            .FirstOrDefaultAsync();
         }
-        public Task<int> SaveRestaurantListAsync(RestaurantList slist)
+        public Task<int> SaveRestaurantListAsync(RestaurantList rlist)
         {
-            if (slist.ID != 0)
+            if (rlist.ID != 0)
             {
-                return _database.UpdateAsync(slist);
+                return _database.UpdateAsync(rlist);
             }
             else
             {
-                return _database.InsertAsync(slist);
+                return _database.InsertAsync(rlist);
             }
         }
-        public Task<int> DeleteRestaurantListAsync(RestaurantList slist)
+        public Task<int> DeleteRestaurantListAsync(RestaurantList rlist)
         {
-            return _database.DeleteAsync(slist);
+            return _database.DeleteAsync(rlist);
         }
     }
 }
